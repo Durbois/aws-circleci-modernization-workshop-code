@@ -7,9 +7,9 @@ orbs:
   terraform: circleci/terraform@3.0.0
 workflows:
   # Name the workflow "welcome"
-  welcome:
+  node:
     jobs:
-    -  welcome/run_tests:
+    -  node/run_tests:
           docker:
             - image: cimg/node:14.16.0
           steps:
