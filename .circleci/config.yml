@@ -9,7 +9,7 @@ workflows:
   # Name the workflow "welcome"
   node:
     jobs:
-    -  node/run_tests:
+      - run_tests:
           docker:
             - image: cimg/node:14.16.0
           steps:
